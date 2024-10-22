@@ -13,6 +13,9 @@
 		FA58FDA62CC5B7AC00B867A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FDA52CC5B7AC00B867A5 /* Preview Assets.xcassets */; };
 		FA58FDAD2CC5B7F600B867A5 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */; };
 		FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */; };
+		FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80BAC82CC8625B005574FB /* SoundsView.swift */; };
+		FA80BAD22CC86710005574FB /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BACF2CC86710005574FB /* badum.mp3 */; };
+		FA80BAD32CC86710005574FB /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BAD02CC86710005574FB /* tada.mp3 */; };
 		FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */; };
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
@@ -30,6 +33,9 @@
 		FA58FDA52CC5B7AC00B867A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
+		FA80BAC82CC8625B005574FB /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
+		FA80BACF2CC86710005574FB /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
+		FA80BAD02CC86710005574FB /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderView.swift; sourceTree = "<group>"; };
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 				FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */,
 				FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */,
 				FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */,
+				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
@@ -80,6 +87,7 @@
 				FAA15AE02CC654F800C214AB /* RotationGestureView.swift */,
 				FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */,
 				FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */,
+				FA80BAD12CC86710005574FB /* sounds */,
 				FA58FDA22CC5B7AC00B867A5 /* Assets.xcassets */,
 				FA58FDA42CC5B7AC00B867A5 /* Preview Content */,
 			);
@@ -92,6 +100,15 @@
 				FA58FDA52CC5B7AC00B867A5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA80BAD12CC86710005574FB /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FA80BACF2CC86710005574FB /* badum.mp3 */,
+				FA80BAD02CC86710005574FB /* tada.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA80BAD32CC86710005574FB /* tada.mp3 in Resources */,
+				FA80BAD22CC86710005574FB /* badum.mp3 in Resources */,
 				FA58FDA62CC5B7AC00B867A5 /* Preview Assets.xcassets in Resources */,
 				FA58FDA32CC5B7AC00B867A5 /* Assets.xcassets in Resources */,
 			);
@@ -174,6 +193,7 @@
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
 				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
+				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,
 				FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
