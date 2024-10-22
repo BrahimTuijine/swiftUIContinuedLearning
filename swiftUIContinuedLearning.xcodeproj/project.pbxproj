@@ -15,6 +15,7 @@
 		FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */; };
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
+		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
+		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */,
 				FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */,
 				FAA15AE22CC65E8600C214AB /* DragGestureView.swift */,
+				FAA15AE42CC6C36600C214AB /* DragGesture2.swift */,
 				FAA15AE02CC654F800C214AB /* RotationGestureView.swift */,
 				FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */,
 				FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */,
@@ -151,6 +154,7 @@
 			files = (
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
+				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */,
 				FA58FDAD2CC5B7F600B867A5 /* LongPressGestureView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
