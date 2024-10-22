@@ -17,6 +17,7 @@
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
 		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
+		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
+		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */,
 				FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */,
 				FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */,
+				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FAA15AE22CC65E8600C214AB /* DragGestureView.swift */,
 				FAA15AE42CC6C36600C214AB /* DragGesture2.swift */,
 				FAA15AE02CC654F800C214AB /* RotationGestureView.swift */,
@@ -163,6 +166,7 @@
 				FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
+				FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

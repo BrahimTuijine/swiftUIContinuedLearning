@@ -1,5 +1,5 @@
 //
-//  swiftUIContinuedLearningApp.swift
+//  swiftUIContinuedLearningApp.swift 
 //  swiftUIContinuedLearning
 //
 //  Created by MacBook on 20/10/2024.
@@ -11,7 +11,7 @@ import SwiftUI
 struct swiftUIContinuedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            DragGestureView()
+            GeometryReaderView()
         }
     }
 }
