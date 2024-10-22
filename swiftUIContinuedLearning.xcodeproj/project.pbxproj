@@ -19,6 +19,7 @@
 		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
 		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 		FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */; };
+		FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A72CC7BD67006BF37E /* MaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
 		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
+		FAE400A72CC7BD67006BF37E /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */,
 				FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
+				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
 				FAA15AE22CC65E8600C214AB /* DragGestureView.swift */,
 				FAA15AE42CC6C36600C214AB /* DragGesture2.swift */,
@@ -170,6 +173,7 @@
 				FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
+				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
 				FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
