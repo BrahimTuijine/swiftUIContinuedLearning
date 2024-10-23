@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0E3DB52CC943BB00C4981F /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */; };
 		FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */; };
 		FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */; };
 		FA58FDA32CC5B7AC00B867A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FDA22CC5B7AC00B867A5 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		FA58FD9B2CC5B7AB00B867A5 /* swiftUIContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIContinuedLearningApp.swift; sourceTree = "<group>"; };
 		FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */,
 				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
+				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FA80BAD42CC869EA005574FB /* HapticsView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
@@ -195,6 +198,7 @@
 				FA58FDAD2CC5B7F600B867A5 /* LongPressGestureView.swift in Sources */,
 				FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
+				FA0E3DB52CC943BB00C4981F /* LocalNotificationView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
 				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
 				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,

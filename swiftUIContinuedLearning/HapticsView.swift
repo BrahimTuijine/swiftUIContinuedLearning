@@ -17,7 +17,7 @@ class HapticsManager {
     
     func impact(style: UIImpactFeedbackGenerator.FeedbackStyle) -> Void {
         let generator = UIImpactFeedbackGenerator(style: style)
-        
+        generator.impactOccurred()
     }
 }
 
