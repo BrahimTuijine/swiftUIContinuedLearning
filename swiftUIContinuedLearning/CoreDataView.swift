@@ -61,9 +61,46 @@ class CoreDataViewModel: ObservableObject {
 struct CoreDataView: View {
     
     @StateObject private var vm : CoreDataViewModel = CoreDataViewModel()
+    @State var textField : String = ""
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            
+            VStack(spacing: 20){
+                
+                TextField("add fruit name here...", text: $textField)
+                    .font(.headline)
+                    .padding(.horizontal)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(.gray.opacity(0.2))
+                    .cornerRadius(10)
+                    
+                
+                Button("Save fruit") {
+                    guard !textField.isEmpty && !(textField.count < 3) else {return}
+                    vm.addFruit(fruitTitle: textField)
+                    textField = ""
+                }
+                .font(.headline)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .foregroundColor(.white)
+                .background(.pink)
+                .cornerRadius(10)
+                
+
+                List {
+                    ForEach(vm.fruits) { fruit in
+                        Text(fruit.name ?? "")
+                    }
+                }
+                .listStyle(.plain)
+            }
+            .navigationTitle("Fruits")
+        }
+        .padding()
+        
     }
 }
 
