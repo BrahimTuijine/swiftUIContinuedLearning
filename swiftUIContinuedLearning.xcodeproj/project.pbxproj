@@ -15,6 +15,8 @@
 		FA58FDA62CC5B7AC00B867A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FDA52CC5B7AC00B867A5 /* Preview Assets.xcassets */; };
 		FA58FDAD2CC5B7F600B867A5 /* LongPressGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */; };
 		FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */; };
+		FA6088722CCB04C900AF4A75 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6088712CCB04C900AF4A75 /* CoreDataView.swift */; };
+		FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */; };
 		FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80BAC82CC8625B005574FB /* SoundsView.swift */; };
 		FA80BAD22CC86710005574FB /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BACF2CC86710005574FB /* badum.mp3 */; };
 		FA80BAD32CC86710005574FB /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BAD02CC86710005574FB /* tada.mp3 */; };
@@ -38,6 +40,8 @@
 		FA58FDA52CC5B7AC00B867A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGestureView.swift; sourceTree = "<group>"; };
 		FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
+		FA6088712CCB04C900AF4A75 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
+		FA6088742CCB06DC00AF4A75 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		FA80BAC82CC8625B005574FB /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
 		FA80BACF2CC86710005574FB /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
 		FA80BAD02CC86710005574FB /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
@@ -87,9 +91,11 @@
 				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
+				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FA80BAD42CC869EA005574FB /* HapticsView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
+				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA0136B12CC9B0BF009A4843 /* HashableView.swift */,
 				FAA15AE22CC65E8600C214AB /* DragGestureView.swift */,
 				FAA15AE42CC6C36600C214AB /* DragGesture2.swift */,
@@ -194,6 +200,7 @@
 			files = (
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
+				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
@@ -203,6 +210,7 @@
 				FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,
 				FA0E3DB52CC943BB00C4981F /* LocalNotificationView.swift in Sources */,
+				FA6088722CCB04C900AF4A75 /* CoreDataView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
 				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
 				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,
@@ -410,6 +418,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA6088742CCB06DC00AF4A75 /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = FA6088742CCB06DC00AF4A75 /* FruitsContainer.xcdatamodel */;
+			name = FruitsContainer.xcdatamodeld;
+			path = /Users/macbook/development/swiftUi/swiftUIContinuedLearning/swiftUIContinuedLearning/FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FA58FD932CC5B7AB00B867A5 /* Project object */;
 }
