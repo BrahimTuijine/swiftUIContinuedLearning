@@ -47,6 +47,13 @@ class CoreDataViewModel: ObservableObject {
         saveFruit()
     }
     
+    func deleteFruit(indexSet: IndexSet) -> Void {
+        guard let index = indexSet.first else {return}
+        let entity = fruits[index]
+        container.viewContext.delete(entity)
+        saveFruit()
+    }
+    
     private func saveFruit() -> Void {
         do {
            try container.viewContext.save()
@@ -94,6 +101,7 @@ struct CoreDataView: View {
                     ForEach(vm.fruits) { fruit in
                         Text(fruit.name ?? "")
                     }
+                    .onDelete(perform: vm.deleteFruit)
                 }
                 .listStyle(.plain)
             }
