@@ -54,6 +54,13 @@ class CoreDataViewModel: ObservableObject {
         saveFruit()
     }
     
+    func updateFruit(fruit: FruitsEntity) -> Void {
+        let oldName = fruit.name ?? ""
+        let newName = oldName + " updated"
+        fruit.name = newName
+        saveFruit()
+    }
+    
     private func saveFruit() -> Void {
         do {
            try container.viewContext.save()
@@ -100,8 +107,12 @@ struct CoreDataView: View {
                 List {
                     ForEach(vm.fruits) { fruit in
                         Text(fruit.name ?? "")
+                            .onTapGesture {
+                                vm.updateFruit(fruit: fruit)
+                            }
                     }
                     .onDelete(perform: vm.deleteFruit)
+                    
                 }
                 .listStyle(.plain)
             }
