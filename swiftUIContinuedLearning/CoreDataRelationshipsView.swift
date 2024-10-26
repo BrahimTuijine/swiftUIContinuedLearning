@@ -52,7 +52,29 @@ struct CoreDataRelationshipsView: View {
     @StateObject var vm = CoreDataRelationshipsViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            
+            ScrollView {
+                VStack (spacing: 20) {
+                    
+                    Button(action: {
+                        vm.addBusiness(name: "Cars")
+                    }, label: {
+                        Text("Perform action")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                            .frame(height: 55)
+                            .frame(maxWidth: .infinity)
+                            .background(.blue)
+                            .cornerRadius(10)
+                    })
+                    
+                }
+                .padding()
+                .navigationTitle("RelationShips")
+            }
+        }
+        
     }
 }
 
