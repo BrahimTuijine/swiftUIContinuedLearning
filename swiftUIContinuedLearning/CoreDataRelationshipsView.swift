@@ -40,11 +40,27 @@ class CoreDataRelationshipsViewModel: ObservableObject {
 
     @Published var business : [BusinessEntity] = []
     
+    init() {
+        getBusiness()
+    }
+    
     func addBusiness(name: String) -> Void {
         let entity = BusinessEntity(context: manager.context)
         entity.name = name
         manager.save()
     }
+    
+    func getBusiness() -> Void {
+        let request = NSFetchRequest<BusinessEntity>(entityName: "BusinessEntity")
+    
+        do {
+            business = try manager.context.fetch(request)
+        } catch {
+            print("error when get business list \(error)")
+        }
+    }
+    
+    
 }
 
 struct CoreDataRelationshipsView: View {
