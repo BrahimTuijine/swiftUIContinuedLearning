@@ -38,6 +38,13 @@ class CoreDataManager {
 class CoreDataRelationshipsViewModel: ObservableObject {
     let manager : CoreDataManager = CoreDataManager.instance
 
+    @Published var business : [BusinessEntity] = []
+    
+    func addBusiness(name: String) -> Void {
+        let entity = BusinessEntity(context: manager.context)
+        entity.name = name
+        manager.save()
+    }
 }
 
 struct CoreDataRelationshipsView: View {
