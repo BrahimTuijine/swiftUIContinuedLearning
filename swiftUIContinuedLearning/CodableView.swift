@@ -7,10 +7,36 @@
 
 import SwiftUI
 
-struct CustomerModel : Hashable, Codable {
+struct CustomerModel : Codable {
     let name: String
     let points: Int
     let isPremium: Bool
+    
+//    init(name: String, points: Int, isPremium: Bool) {
+//        self.name = name
+//        self.points = points
+//        self.isPremium = isPremium
+//    }
+//    
+//    init(from decoder: any Decoder) throws {
+//        let container = try decoder.container(keyedBy: CodingKeys.self)
+//        self.name = try container.decode(String.self, forKey: .name)
+//        self.points = try container.decode(Int.self, forKey: .points)
+//        self.isPremium = try container.decode(Bool.self, forKey: .isPremium)
+//    }
+//    
+//    enum CodingKeys: CodingKey {
+//        case name
+//        case points
+//        case isPremium
+//    }
+//    
+//    func encode(to encoder: any Encoder) throws {
+//        var container = encoder.container(keyedBy: CodingKeys.self)
+//        try container.encode(self.name, forKey: .name)
+//        try container.encode(self.points, forKey: .points)
+//        try container.encode(self.isPremium, forKey: .isPremium)
+//    }
 }
 
 class CodableViewModel: ObservableObject {
@@ -23,25 +49,16 @@ class CodableViewModel: ObservableObject {
     func getData() -> Void {
         guard let data = getJsonData() else {return}
         
-        if
-            let localData = try? JSONSerialization.jsonObject(with: data, options: []),
-            let dictionary = localData as? [String: Any],
-            let name = dictionary["name"] as? String,
-            let points = dictionary["points"] as? Int,
-            let isPremium = dictionary["isPremium"] as? Bool {
-            
-            customer = CustomerModel(name: name, points: points, isPremium: isPremium)
+        do {
+            customer = try JSONDecoder().decode( CustomerModel.self , from: data)
+        } catch {
+            print("error when docode json \(error)")
         }
     }
     
     func getJsonData() -> Data?  {
-        let dictinary: [String: Any] = [
-            "name": "brahim",
-            "points": 10,
-            "isPremium": true,
-        ]
-        
-        let jsonData = try? JSONSerialization.data(withJSONObject: dictinary, options: [])
+        let customer = CustomerModel(name: "brahim", points: 20, isPremium: true)
+        let jsonData = try? JSONEncoder().encode(customer)
         return jsonData
     }
 }
