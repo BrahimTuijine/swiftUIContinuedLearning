@@ -29,6 +29,7 @@
 		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
 		FACBC04F2CCF0E5F0082A407 /* BackgroundThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */; };
 		FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */; };
+		FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0522CCF851B0082A407 /* TypealiasView.swift */; };
 		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 		FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */; };
 		FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A72CC7BD67006BF37E /* MaskView.swift */; };
@@ -58,6 +59,7 @@
 		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
 		FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadView.swift; sourceTree = "<group>"; };
 		FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfView.swift; sourceTree = "<group>"; };
+		FACBC0522CCF851B0082A407 /* TypealiasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasView.swift; sourceTree = "<group>"; };
 		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
 		FAE400A72CC7BD67006BF37E /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
+				FACBC0522CCF851B0082A407 /* TypealiasView.swift */,
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
@@ -231,6 +234,7 @@
 				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
 				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,
 				FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */,
+				FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
