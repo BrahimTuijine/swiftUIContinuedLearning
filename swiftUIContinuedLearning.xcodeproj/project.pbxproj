@@ -27,6 +27,7 @@
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
 		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
+		FACBC04F2CCF0E5F0082A407 /* BackgroundThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */; };
 		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 		FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */; };
 		FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A72CC7BD67006BF37E /* MaskView.swift */; };
@@ -54,6 +55,7 @@
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
+		FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadView.swift; sourceTree = "<group>"; };
 		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
 		FAE400A72CC7BD67006BF37E /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
@@ -98,11 +100,12 @@
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */,
+				FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */,
+				FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FA80BAD42CC869EA005574FB /* HapticsView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
 				FA0136B12CC9B0BF009A4843 /* HashableView.swift */,
-				FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */,
 				FAA15AE22CC65E8600C214AB /* DragGestureView.swift */,
 				FAA15AE42CC6C36600C214AB /* DragGesture2.swift */,
 				FAA15AE02CC654F800C214AB /* RotationGestureView.swift */,
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACBC04F2CCF0E5F0082A407 /* BackgroundThreadView.swift in Sources */,
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
 				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,

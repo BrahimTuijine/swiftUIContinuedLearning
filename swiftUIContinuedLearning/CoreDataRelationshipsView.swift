@@ -50,7 +50,10 @@ class CoreDataRelationshipsViewModel: ObservableObject {
     
     func addBusiness() -> Void {
         let entity = BusinessEntity(context: manager.context)
-        entity.name = "Apple"
+        entity.name = "Microsoft"
+        entity.departments = [departments[0], departments[1]]
+        entity.employees = [employees[1]]
+        
         save()
     }
     
@@ -66,8 +69,11 @@ class CoreDataRelationshipsViewModel: ObservableObject {
     
     func addDepartment() -> Void {
         let department = DepartmentEntity(context: manager.context)
-        department.name = "Marketing"
-        department.businesses = [business[0]]
+        department.name = "Engineering"
+//        department.businesses = [business[0]]
+        
+        department.addToEmployees(employees[1])
+        
         save()
     }
     
@@ -130,7 +136,7 @@ struct CoreDataRelationshipsView: View {
                 VStack (spacing: 20) {
                     
                     Button(action: {
-                        vm.addEmployee()
+                        vm.addBusiness()
                     }, label: {
                         Text("Perform action")
                             .foregroundColor(.white)
