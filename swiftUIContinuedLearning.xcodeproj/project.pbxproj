@@ -30,6 +30,7 @@
 		FACBC04F2CCF0E5F0082A407 /* BackgroundThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */; };
 		FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */; };
 		FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0522CCF851B0082A407 /* TypealiasView.swift */; };
+		FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0542CCF88DA0082A407 /* EscapingView.swift */; };
 		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 		FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */; };
 		FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A72CC7BD67006BF37E /* MaskView.swift */; };
@@ -60,6 +61,7 @@
 		FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadView.swift; sourceTree = "<group>"; };
 		FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfView.swift; sourceTree = "<group>"; };
 		FACBC0522CCF851B0082A407 /* TypealiasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasView.swift; sourceTree = "<group>"; };
+		FACBC0542CCF88DA0082A407 /* EscapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingView.swift; sourceTree = "<group>"; };
 		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
 		FAE400A72CC7BD67006BF37E /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */,
+				FACBC0542CCF88DA0082A407 /* EscapingView.swift */,
 				FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */,
 				FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
@@ -217,6 +220,7 @@
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
 				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,
+				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
