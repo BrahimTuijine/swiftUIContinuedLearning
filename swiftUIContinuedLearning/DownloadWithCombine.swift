@@ -25,7 +25,7 @@ class DownloadWithCombineViewModel: ObservableObject {
         URLSession.shared.dataTaskPublisher(for: url)
             //.subscribe(on: DispatchQueue.global(qos: .background))
             .receive(on: DispatchQueue.main)
-            .tryMap(handleOutput)
+            .tryMap(handleOutput) 
             .decode(type: [PostModel].self, decoder: JSONDecoder())
             .replaceError(with: [])
             .sink(receiveValue: { [weak self]  posts in

@@ -12,6 +12,8 @@
 		FA22177F2CCB924C004E5984 /* CoreDataRelationshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */; };
 		FA2217822CCC592B004E5984 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */; };
 		FA531E562CD0D60F00EB8284 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */; };
+		FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E572CD0F11900EB8284 /* TimerView.swift */; };
+		FA531E5A2CD1308500EB8284 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E592CD1308500EB8284 /* SubscriberView.swift */; };
 		FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */; };
 		FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */; };
 		FA58FDA32CC5B7AC00B867A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA58FDA22CC5B7AC00B867A5 /* Assets.xcassets */; };
@@ -45,6 +47,8 @@
 		FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsView.swift; sourceTree = "<group>"; };
 		FA2217812CCC592B004E5984 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
+		FA531E572CD0F11900EB8284 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		FA531E592CD1308500EB8284 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
 		FA58FD9B2CC5B7AB00B867A5 /* swiftUIContinuedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIContinuedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA58FD9E2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIContinuedLearningApp.swift; sourceTree = "<group>"; };
 		FA58FDA02CC5B7AB00B867A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,19 +111,21 @@
 				FA58FDAC2CC5B7F600B867A5 /* LongPressGestureView.swift */,
 				FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */,
 				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
+				FA531E572CD0F11900EB8284 /* TimerView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
 				FACBC0562CCF946B0082A407 /* CodableView.swift */,
 				FACBC0522CCF851B0082A407 /* TypealiasView.swift */,
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
+				FA531E592CD1308500EB8284 /* SubscriberView.swift */,
 				FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */,
 				FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */,
+				FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */,
 				FACBC0542CCF88DA0082A407 /* EscapingView.swift */,
 				FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */,
-				FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */,
 				FAE400A72CC7BD67006BF37E /* MaskView.swift */,
 				FA80BAD42CC869EA005574FB /* HapticsView.swift */,
 				FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */,
@@ -234,6 +240,7 @@
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
 				FACBC0592CCFE9700082A407 /* DownloadWithEscapingView.swift in Sources */,
+				FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
 				FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */,
 				FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */,
@@ -250,6 +257,7 @@
 				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,
 				FA531E562CD0D60F00EB8284 /* DownloadWithCombine.swift in Sources */,
 				FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */,
+				FA531E5A2CD1308500EB8284 /* SubscriberView.swift in Sources */,
 				FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
