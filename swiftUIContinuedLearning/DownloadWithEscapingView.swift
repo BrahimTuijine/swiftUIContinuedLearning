@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct Post: Identifiable, Codable {
+struct PostModel: Identifiable, Codable {
     let userId, id: Int
     let title, body: String
 }
@@ -18,7 +18,7 @@ typealias downloadDataHandler = (_ data: Data , _ statusCode : Int, _ error: Str
 class DownloadWithEscapingViewModel: ObservableObject {
     
     
-    @Published var posts : [Post] = []
+    @Published var posts : [PostModel] = []
     
     init() {
         getData()
@@ -31,7 +31,7 @@ class DownloadWithEscapingViewModel: ObservableObject {
         downloadData(url: url) { data, statusCode, error in
             guard error == nil else { print(error!); return}
             
-            guard let decodedPosts = try? JSONDecoder().decode([Post].self, from: data) else {return}
+            guard let decodedPosts = try? JSONDecoder().decode([PostModel].self, from: data) else {return}
             
             DispatchQueue.main.async { [weak self] in
                 print(decodedPosts)
