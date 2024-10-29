@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class EscapingViewModel: ObservableObject {
+fileprivate class EscapingViewModel: ObservableObject {
     @Published var text: String = "Hello"
     
     func getData()  -> Void {
@@ -45,15 +45,15 @@ class EscapingViewModel: ObservableObject {
     }
 }
 
-struct DownloadResult {
+fileprivate struct DownloadResult {
     let data: String
 }
 
-typealias DownloadCompletion = (DownloadResult) -> ()
+fileprivate typealias DownloadCompletion = (DownloadResult) -> ()
 
 struct EscapingView: View {
     
-    @StateObject var vm = EscapingViewModel()
+    @StateObject fileprivate var vm = EscapingViewModel()
     
     var body: some View {
         Text(vm.text)

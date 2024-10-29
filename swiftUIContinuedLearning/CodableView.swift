@@ -57,7 +57,7 @@ class CodableViewModel: ObservableObject {
     }
     
     func getJsonData() -> Data?  {
-        let customer = CustomerModel(name: "brahim", points: 20, isPremium: true)
+        let customer = CustomerModel(name: "brahim", points: 20, isPremium: true) 
         let jsonData = try? JSONEncoder().encode(customer)
         return jsonData
     }

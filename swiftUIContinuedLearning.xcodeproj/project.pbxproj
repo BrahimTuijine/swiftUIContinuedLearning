@@ -32,6 +32,7 @@
 		FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0522CCF851B0082A407 /* TypealiasView.swift */; };
 		FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0542CCF88DA0082A407 /* EscapingView.swift */; };
 		FACBC0572CCF946B0082A407 /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0562CCF946B0082A407 /* CodableView.swift */; };
+		FACBC0592CCFE9700082A407 /* DownloadWithEscapingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */; };
 		FAE400A42CC7A455006BF37E /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */; };
 		FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */; };
 		FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE400A72CC7BD67006BF37E /* MaskView.swift */; };
@@ -64,6 +65,7 @@
 		FACBC0522CCF851B0082A407 /* TypealiasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasView.swift; sourceTree = "<group>"; };
 		FACBC0542CCF88DA0082A407 /* EscapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapingView.swift; sourceTree = "<group>"; };
 		FACBC0562CCF946B0082A407 /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
+		FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithEscapingView.swift; sourceTree = "<group>"; };
 		FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
 		FAE400A52CC7B60F006BF37E /* MultipleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheetView.swift; sourceTree = "<group>"; };
 		FAE400A72CC7BD67006BF37E /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				FACBC0522CCF851B0082A407 /* TypealiasView.swift */,
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
+				FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */,
 				FACBC0542CCF88DA0082A407 /* EscapingView.swift */,
@@ -227,6 +230,7 @@
 				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
+				FACBC0592CCFE9700082A407 /* DownloadWithEscapingView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
 				FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */,
 				FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */,
