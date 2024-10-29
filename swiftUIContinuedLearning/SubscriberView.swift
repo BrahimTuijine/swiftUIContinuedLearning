@@ -12,7 +12,7 @@ class SubscriberViewModel: ObservableObject {
     
     @Published var count: Int = 0
     
-    var timer : AnyCancellable?
+    var cancellable = Set<AnyCancellable>()
     
     init() {
         setUpTimer()
@@ -20,7 +20,7 @@ class SubscriberViewModel: ObservableObject {
     
     
     func setUpTimer() -> Void {
-       timer = Timer.publish(every: 1, on: .main, in: .common)
+        Timer.publish(every: 1, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
                 guard let self = self else {return}
@@ -28,10 +28,13 @@ class SubscriberViewModel: ObservableObject {
                 self.count += 1
                 
                 if count >= 10 {
-                    self.timer?.cancel()
+                    for item in cancellable {
+                        item.cancel()
+                    }
                 }
                 
             }
+            .store(in: &cancellable)
     }
 }
 
