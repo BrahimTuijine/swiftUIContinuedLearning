@@ -27,7 +27,10 @@ class SubscriberViewModel: ObservableObject {
         $textFieldText.map { text in
             return text.count > 3
         }
-        .assign(to: \.textFieldIsValid, on: self)
+        //.assign(to: \.textFieldIsValid, on: self)
+        .sink(receiveValue: { [weak self] value in
+            self?.textFieldIsValid = value
+        })
         .store(in: &cancellable)
     
     }
