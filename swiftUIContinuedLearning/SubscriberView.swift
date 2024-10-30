@@ -14,10 +14,23 @@ class SubscriberViewModel: ObservableObject {
     
     var cancellable = Set<AnyCancellable>()
     
+    @Published var textFieldText: String = ""
+    @Published var textFieldIsValid: Bool = false
+    
     init() {
         setUpTimer()
+        addTextFieldSubscriber()
     }
     
+    func addTextFieldSubscriber() -> Void {
+        
+        $textFieldText.map { text in
+            return text.count > 3
+        }
+        .assign(to: \.textFieldIsValid, on: self)
+        .store(in: &cancellable)
+    
+    }
     
     func setUpTimer() -> Void {
         Timer.publish(every: 1, on: .main, in: .common)
@@ -26,12 +39,6 @@ class SubscriberViewModel: ObservableObject {
                 guard let self = self else {return}
                 
                 self.count += 1
-                
-                if count >= 10 {
-                    for item in cancellable {
-                        item.cancel()
-                    }
-                }
                 
             }
             .store(in: &cancellable)
@@ -42,8 +49,20 @@ struct SubscriberView: View {
     @StateObject var vm = SubscriberViewModel()
     
     var body: some View {
-        Text("\(vm.count)")
-            .font(.largeTitle)
+        VStack(spacing: 20) {
+            Text("\(vm.count)")
+                .font(.largeTitle)
+            
+            Text(vm.textFieldIsValid.description)
+            
+            TextField("type something here...", text: $vm.textFieldText)
+                .padding()
+                .frame(height: 55)
+                .frame(maxWidth: .infinity)
+                .background(.gray.opacity(0.3))
+                .cornerRadius(10)
+        }
+        .padding()
     }
 }
 
