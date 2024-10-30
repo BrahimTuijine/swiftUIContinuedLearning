@@ -15,7 +15,10 @@ class SubscriberViewModel: ObservableObject {
     var cancellable = Set<AnyCancellable>()
     
     @Published var textFieldText: String = ""
+    
     @Published var textFieldIsValid: Bool = false
+    
+    @Published var showButton: Bool = false
     
     init() {
         setUpTimer()
@@ -24,14 +27,16 @@ class SubscriberViewModel: ObservableObject {
     
     func addTextFieldSubscriber() -> Void {
         
-        $textFieldText.map { text in
-            return text.count > 3
-        }
-        //.assign(to: \.textFieldIsValid, on: self)
-        .sink(receiveValue: { [weak self] value in
-            self?.textFieldIsValid = value
-        })
-        .store(in: &cancellable)
+        $textFieldText
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+            .map { text in
+                return text.count > 3
+            }
+            .sink(receiveValue: { [weak self] value in
+                self?.textFieldIsValid = value
+                self?.showButton = value
+            })
+            .store(in: &cancellable)
     
     }
     
@@ -56,7 +61,7 @@ struct SubscriberView: View {
             Text("\(vm.count)")
                 .font(.largeTitle)
             
-            Text(vm.textFieldIsValid.description)
+//            Text(vm.textFieldIsValid.description)
             
             TextField("type something here...", text: $vm.textFieldText)
                 .padding()
@@ -64,6 +69,35 @@ struct SubscriberView: View {
                 .frame(maxWidth: .infinity)
                 .background(.gray.opacity(0.3))
                 .cornerRadius(10)
+                .overlay(
+                    Group {
+                        if vm.textFieldIsValid {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.green)
+                                .padding(.trailing)
+                        } else {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.red)
+                                .padding(.trailing)
+                        }
+                        
+                    }
+                        .font(.headline)
+                        .frame(maxWidth: .infinity , alignment: .trailing)
+                )
+            
+                Button(action: {}, label: {
+                   Text("submit".uppercased())
+                       .font(.headline)
+                       .foregroundColor(.white)
+                       .frame(height: 55)
+                       .frame(maxWidth: .infinity)
+                       .background(.blue)
+                       .cornerRadius(10)
+                       .opacity(vm.showButton ? 1 : 0.5)
+               })
+               .disabled(!vm.showButton)
+            
         }
         .padding()
     }
