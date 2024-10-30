@@ -23,6 +23,7 @@ class SubscriberViewModel: ObservableObject {
     init() {
         setUpTimer()
         addTextFieldSubscriber()
+        addButtonSubscriber()
     }
     
     func addTextFieldSubscriber() -> Void {
@@ -48,6 +49,21 @@ class SubscriberViewModel: ObservableObject {
                 
                 self.count += 1
                 
+            }
+            .store(in: &cancellable)
+    }
+    
+    func addButtonSubscriber() -> Void {
+        $textFieldIsValid
+            .combineLatest($count)
+            .sink { [weak self] isValid, count in
+                guard let self = self else {return}
+                
+                if isValid && count >= 10 {
+                    self.showButton = true
+                } else {
+                    self.showButton = false
+                }
             }
             .store(in: &cancellable)
     }
