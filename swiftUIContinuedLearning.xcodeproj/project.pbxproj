@@ -22,6 +22,7 @@
 		FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */; };
 		FA6088722CCB04C900AF4A75 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6088712CCB04C900AF4A75 /* CoreDataView.swift */; };
 		FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */; };
+		FA7FCCF32CD241C400336195 /* FileManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7FCCF22CD241C400336195 /* FileManagerView.swift */; };
 		FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80BAC82CC8625B005574FB /* SoundsView.swift */; };
 		FA80BAD22CC86710005574FB /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BACF2CC86710005574FB /* badum.mp3 */; };
 		FA80BAD32CC86710005574FB /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA80BAD02CC86710005574FB /* tada.mp3 */; };
@@ -58,6 +59,7 @@
 		FA58FDAE2CC5C1C500B867A5 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
 		FA6088712CCB04C900AF4A75 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		FA6088742CCB06DC00AF4A75 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
+		FA7FCCF22CD241C400336195 /* FileManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerView.swift; sourceTree = "<group>"; };
 		FA80BAC82CC8625B005574FB /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
 		FA80BACF2CC86710005574FB /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
 		FA80BAD02CC86710005574FB /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA531E592CD1308500EB8284 /* SubscriberView.swift */,
+				FA7FCCF22CD241C400336195 /* FileManagerView.swift */,
 				FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
 				FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */,
@@ -241,6 +244,7 @@
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
 				FACBC0592CCFE9700082A407 /* DownloadWithEscapingView.swift in Sources */,
 				FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */,
+				FA7FCCF32CD241C400336195 /* FileManagerView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
 				FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */,
 				FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */,
