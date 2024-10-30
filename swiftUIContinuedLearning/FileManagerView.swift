@@ -36,12 +36,28 @@ class LocalFileManager {
     func getImage(name: String) -> UIImage? {
         guard
             let path = getPathForImage(name: name)?.path,
-              
             FileManager.default.fileExists(atPath: path)
-                
-        else { return nil }
+        else {
+            print("error get path") ; return nil }
         
         return UIImage(contentsOfFile: path)
+    }
+    
+    
+    
+    func deleteImage(name: String) -> Void {
+        guard
+            let path = getPathForImage(name: name)?.path,
+            FileManager.default.fileExists(atPath: path)
+        else { print("error get path"); return }
+        
+        do {
+            try FileManager.default.removeItem(atPath: path)
+            print("success delete image")
+        } catch {
+            print("error when delete image")
+        }
+        
     }
     
     func getPathForImage(name: String) -> URL? {
@@ -65,7 +81,8 @@ class FileManagerViewModel: ObservableObject {
     @Published var image: UIImage? = nil
     
     init() {
-        getImageFromAssetsFolder()
+//        getImageFromAssetsFolder()
+        getImageFromFileManager()
     }
     
     
@@ -80,6 +97,15 @@ class FileManagerViewModel: ObservableObject {
     func getImageFromAssetsFolder() -> Void {
         image = UIImage(named: imageName)
     }
+    
+    func getImageFromFileManager() -> Void {
+        image = fileManager.getImage(name: imageName)
+    }
+    
+    func deleteImageFromFileManager() -> Void {
+        fileManager.deleteImage(name: imageName)
+    }
+    
 }
 
 struct FileManagerView: View {
@@ -102,6 +128,17 @@ struct FileManagerView: View {
                     vm.saveImage()
                 }, label: {
                     Text("Save to FM")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .padding(.horizontal)
+                        .background(Color.blue.cornerRadius(10))
+                })
+                
+                Button(action: {
+                    vm.deleteImageFromFileManager()
+                }, label: {
+                    Text("Delete from FM")
                         .font(.headline)
                         .foregroundColor(.white)
                         .padding()
