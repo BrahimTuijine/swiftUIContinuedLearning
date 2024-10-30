@@ -10,28 +10,53 @@ import SwiftUI
 class LocalFileManager {
     static let instance = LocalFileManager()
     
-    func saveImage(image: UIImage, name: String) -> Void {
-        
-
-        guard
-            // encode the image
-            let data : Data = image.pngData(),
-            let path = getPathForImage(name:  name)
-        else {
-            print("error getting data")
-            return
-        }
-        
-        
-        // save the image
-        do {
-            try data.write(to: path)
-            print("success saving image")
-        } catch {
-            print("error when saving image \(error.localizedDescription)")
-        }
-        
+    let folderName : String = "MyApp_Images"
+    
+    init() {
+        createFolderForMyApp()
     }
+    
+    
+    // create a folder for my app to store my data
+    func createFolderForMyApp() -> Void {
+        guard let path = FileManager
+            .default
+            .urls(for: .cachesDirectory, in: .userDomainMask)
+            .first?
+            .appendingPathComponent(folderName)
+            .path
+        else { return }
+        
+        if !FileManager.default.fileExists(atPath: path) {
+            do {
+                try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
+                print("success create folder")
+            } catch {
+                print("error when create folder")
+            }
+        }
+    }
+        
+        func saveImage(image: UIImage, name: String) -> Void {
+            guard
+                // encode the image
+                let data : Data = image.pngData(),
+                let path = getPathForImage(name:  name)
+            else {
+                print("error getting data")
+                return
+            }
+            
+            
+            // save the image
+            do {
+                try data.write(to: path)
+                print("success saving image")
+            } catch {
+                print("error when saving image \(error.localizedDescription)")
+            }
+            
+        }
     
     func getImage(name: String) -> UIImage? {
         guard
@@ -64,7 +89,8 @@ class LocalFileManager {
         guard
             // choose path type
             let path  = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?
-                // concatinate imageName and path => path/imageName
+                // concatinate imageName and path => path/folderName/imageName
+                .appendingPathComponent(folderName)
                 .appendingPathComponent("\(name).png")
         else {
             print("error getting path")
