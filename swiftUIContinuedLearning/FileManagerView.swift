@@ -36,27 +36,44 @@ class LocalFileManager {
             }
         }
     }
+    
+    func deleteFolder() -> Void {
         
-        func saveImage(image: UIImage, name: String) -> Void {
-            guard
-                // encode the image
-                let data : Data = image.pngData(),
-                let path = getPathForImage(name:  name)
-            else {
-                print("error getting data")
-                return
-            }
-            
-            
-            // save the image
-            do {
-                try data.write(to: path)
-                print("success saving image")
-            } catch {
-                print("error when saving image \(error.localizedDescription)")
-            }
-            
+        guard let path = FileManager
+            .default
+            .urls(for: .cachesDirectory, in: .userDomainMask)
+            .first?
+            .appendingPathComponent(folderName)
+            .path
+        else { return }
+        
+        do {
+            try FileManager.default.removeItem(atPath: path)
+        } catch {
+            print("error when delete folder")
         }
+    }
+    
+    func saveImage(image: UIImage, name: String) -> Void {
+        guard
+            // encode the image
+            let data : Data = image.pngData(),
+            let path = getPathForImage(name:  name)
+        else {
+            print("error getting data")
+            return
+        }
+        
+        
+        // save the image
+        do {
+            try data.write(to: path)
+            print("success saving image")
+        } catch {
+            print("error when saving image \(error.localizedDescription)")
+        }
+        
+    }
     
     func getImage(name: String) -> UIImage? {
         guard
@@ -107,7 +124,7 @@ class FileManagerViewModel: ObservableObject {
     @Published var image: UIImage? = nil
     
     init() {
-//        getImageFromAssetsFolder()
+        //        getImageFromAssetsFolder()
         getImageFromFileManager()
     }
     
