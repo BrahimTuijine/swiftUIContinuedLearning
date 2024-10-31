@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0136B12CC9B0BF009A4843 /* HashableView.swift */; };
 		FA0265FC2CD2F3480035E52F /* CacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0265FB2CD2F3480035E52F /* CacheView.swift */; };
+		FA0266032CD2FF8F0035E52F /* DownloadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0266022CD2FF8F0035E52F /* DownloadingImageView.swift */; };
+		FA0266052CD301020035E52F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0266042CD301020035E52F /* PhotoModel.swift */; };
 		FA0E3DB52CC943BB00C4981F /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */; };
 		FA22177F2CCB924C004E5984 /* CoreDataRelationshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */; };
 		FA2217822CCC592B004E5984 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		FA0136B12CC9B0BF009A4843 /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
 		FA0265FB2CD2F3480035E52F /* CacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheView.swift; sourceTree = "<group>"; };
+		FA0266022CD2FF8F0035E52F /* DownloadingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImageView.swift; sourceTree = "<group>"; };
+		FA0266042CD301020035E52F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsView.swift; sourceTree = "<group>"; };
 		FA2217812CCC592B004E5984 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
@@ -92,6 +96,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA0265FD2CD2FF010035E52F /* DownloadingImages */ = {
+			isa = PBXGroup;
+			children = (
+				FA0266012CD2FF6A0035E52F /* Utils */,
+				FA0266002CD2FF580035E52F /* ViewModels */,
+				FA0265FF2CD2FF4A0035E52F /* Views */,
+				FA0265FE2CD2FF250035E52F /* Models */,
+			);
+			path = DownloadingImages;
+			sourceTree = "<group>";
+		};
+		FA0265FE2CD2FF250035E52F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA0266042CD301020035E52F /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA0265FF2CD2FF4A0035E52F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA0266022CD2FF8F0035E52F /* DownloadingImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA0266002CD2FF580035E52F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA0266012CD2FF6A0035E52F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FA58FD922CC5B7AB00B867A5 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +165,7 @@
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
 				FACBC0562CCF946B0082A407 /* CodableView.swift */,
 				FACBC0522CCF851B0082A407 /* TypealiasView.swift */,
+				FA0265FD2CD2FF010035E52F /* DownloadingImages */,
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA0265FB2CD2F3480035E52F /* CacheView.swift */,
@@ -243,10 +289,12 @@
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
 				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,
 				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
+				FA0266052CD301020035E52F /* PhotoModel.swift in Sources */,
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
 				FA0136B22CC9B0BF009A4843 /* HashableView.swift in Sources */,
 				FACBC0592CCFE9700082A407 /* DownloadWithEscapingView.swift in Sources */,
 				FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */,
+				FA0266032CD2FF8F0035E52F /* DownloadingImageView.swift in Sources */,
 				FA7FCCF32CD241C400336195 /* FileManagerView.swift in Sources */,
 				FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */,
 				FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */,
