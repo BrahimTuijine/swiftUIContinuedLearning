@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct DownloadingImageView: View {
+    
+    @StateObject var vm = PhotoModelViewModel.instance
+    
     var body: some View {
         NavigationView {
             VStack {
+                
                 List {
-                    Text("hello")
+                    ForEach(vm.photoModel) { model in
+                        
+                    }
                 }
-                .navigationTitle("Donloading Images")
-            }
+                
+               
+            } .navigationTitle("Downloading Images")
         }
     }
 }
