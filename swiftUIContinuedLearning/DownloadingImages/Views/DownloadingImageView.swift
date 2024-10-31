@@ -13,16 +13,12 @@ struct DownloadingImageView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                
-                List {
-                    ForEach(vm.photoModel) { model in
-                        
-                    }
+            List {
+                ForEach(vm.photoModel) { model in
+                    DownloadImageRow(model: model)
                 }
-                
-               
-            } .navigationTitle("Downloading Images")
+            }.navigationTitle("Downloading Images")
+            
         }
     }
 }

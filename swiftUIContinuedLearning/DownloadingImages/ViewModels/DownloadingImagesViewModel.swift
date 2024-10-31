@@ -21,9 +21,11 @@ class PhotoModelViewModel: ObservableObject {
     }
     
     func addSubscribers() -> Void {
-        dataService.$photoModel
+        dataService
+            .$photoModel
             .sink { [weak self] photoModel in
                 self?.photoModel = photoModel
-        }.store(in: &cancellable)
+            }
+            .store(in: &cancellable)
     }
 }

@@ -10,8 +10,6 @@ import SwiftUI
 class CacheManager {
     static let instance = CacheManager() 
     
-    let folderName : String = "MyApp_Images"
-    
     private init() {
         
     }

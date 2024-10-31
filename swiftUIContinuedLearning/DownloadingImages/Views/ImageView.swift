@@ -9,17 +9,26 @@ import SwiftUI
 
 struct ImageView: View {
     
-    @State var isLoading : Bool = true
+    let imageLink: String
+    
+    @StateObject var loader : ImageLoadingViewModel
+    
+    init(imageLink: String) {
+        self.imageLink = imageLink
+        _loader = StateObject(wrappedValue: ImageLoadingViewModel(imageLink: imageLink))
+    }
     
     var body: some View {
-        if isLoading {
+        if loader.isLoading  {
             ProgressView()
-        } else {
-            
+        } else if let image = loader.image {
+            Image(uiImage: image)
+                .resizable()
+                .clipShape(Circle())
         }
     }
 }
 
 #Preview {
-    ImageView()
+    ImageView(imageLink: "https://via.placeholder.com/150/771796")
 }

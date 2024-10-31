@@ -34,6 +34,8 @@
 		FA80BAD52CC869EA005574FB /* HapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80BAD42CC869EA005574FB /* HapticsView.swift */; };
 		FA963C632CD3987200B157F7 /* DownloadImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA963C622CD3987200B157F7 /* DownloadImageRow.swift */; };
 		FA963C652CD39A7B00B157F7 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA963C642CD39A7B00B157F7 /* ImageView.swift */; };
+		FA963C672CD39BF900B157F7 /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA963C662CD39BF900B157F7 /* ImageLoadingViewModel.swift */; };
+		FA963C692CD3D77300B157F7 /* PhotoModelCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA963C682CD3D77300B157F7 /* PhotoModelCacheManager.swift */; };
 		FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */; };
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
@@ -78,6 +80,8 @@
 		FA80BAD42CC869EA005574FB /* HapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsView.swift; sourceTree = "<group>"; };
 		FA963C622CD3987200B157F7 /* DownloadImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageRow.swift; sourceTree = "<group>"; };
 		FA963C642CD39A7B00B157F7 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FA963C662CD39BF900B157F7 /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
+		FA963C682CD3D77300B157F7 /* PhotoModelCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelCacheManager.swift; sourceTree = "<group>"; };
 		FA9C88442CC72301008C88D8 /* ScrollViewReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderView.swift; sourceTree = "<group>"; };
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0266062CD301C30035E52F /* DownloadingImagesViewModel.swift */,
+				FA963C662CD39BF900B157F7 /* ImageLoadingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FA0266082CD302BE0035E52F /* PhotoModelDataService.swift */,
+				FA963C682CD3D77300B157F7 /* PhotoModelCacheManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
 				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,
+				FA963C672CD39BF900B157F7 /* ImageLoadingViewModel.swift in Sources */,
 				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
 				FA0266092CD302BE0035E52F /* PhotoModelDataService.swift in Sources */,
 				FA0266052CD301020035E52F /* PhotoModel.swift in Sources */,
@@ -315,6 +322,7 @@
 				FA58FDA12CC5B7AB00B867A5 /* ContentView.swift in Sources */,
 				FA0266072CD301C40035E52F /* DownloadingImagesViewModel.swift in Sources */,
 				FAE400A62CC7B60F006BF37E /* MultipleSheetView.swift in Sources */,
+				FA963C692CD3D77300B157F7 /* PhotoModelCacheManager.swift in Sources */,
 				FA58FDAD2CC5B7F600B867A5 /* LongPressGestureView.swift in Sources */,
 				FA9C88452CC72301008C88D8 /* ScrollViewReaderView.swift in Sources */,
 				FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */,

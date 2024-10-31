@@ -13,7 +13,7 @@ struct DownloadImageRow: View {
     
     var body: some View {
         HStack {
-            Circle().frame(width: 70, height: 70)
+            ImageView(imageLink: model.url).frame(width: 70, height: 70)
             VStack (alignment: .leading) {
                 Text(model.title)
                     .font(.headline)
@@ -29,6 +29,6 @@ struct DownloadImageRow: View {
 }
 
 #Preview {
-    DownloadImageRow(model: PhotoModel(albumID: 1, id: 1, title: "title", url:"url image", thumbnailURL: "thumbnailURL"))
+    DownloadImageRow(model: PhotoModel(albumID: 1, id: 1, title: "title", url:"https://via.placeholder.com/150/771796", thumbnailURL: "thumbnailURL"))
         
 }
