@@ -17,6 +17,7 @@
 		FA22177F2CCB924C004E5984 /* CoreDataRelationshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */; };
 		FA2217822CCC592B004E5984 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */; };
 		FA50B4A52CD58F5500ADED4D /* AlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B4A42CD58F5500ADED4D /* AlignmentGuideView.swift */; };
+		FA50B4A72CD595C300ADED4D /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B4A62CD595C300ADED4D /* VisualEffectView.swift */; };
 		FA531E562CD0D60F00EB8284 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */; };
 		FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E572CD0F11900EB8284 /* TimerView.swift */; };
 		FA531E5A2CD1308500EB8284 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E592CD1308500EB8284 /* SubscriberView.swift */; };
@@ -63,6 +64,7 @@
 		FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsView.swift; sourceTree = "<group>"; };
 		FA2217812CCC592B004E5984 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		FA50B4A42CD58F5500ADED4D /* AlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideView.swift; sourceTree = "<group>"; };
+		FA50B4A62CD595C300ADED4D /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		FA531E572CD0F11900EB8284 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FA531E592CD1308500EB8284 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
 				FACBC0562CCF946B0082A407 /* CodableView.swift */,
+				FA50B4A62CD595C300ADED4D /* VisualEffectView.swift */,
 				FACBC0522CCF851B0082A407 /* TypealiasView.swift */,
 				FA0265FD2CD2FF010035E52F /* DownloadingImages */,
 				FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */,
@@ -309,6 +312,7 @@
 				FA58FDAF2CC5C1C500B867A5 /* MagnificationGestureView.swift in Sources */,
 				FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */,
 				FA6088752CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld in Sources */,
+				FA50B4A72CD595C300ADED4D /* VisualEffectView.swift in Sources */,
 				FA963C672CD39BF900B157F7 /* ImageLoadingViewModel.swift in Sources */,
 				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
 				FA0266092CD302BE0035E52F /* PhotoModelDataService.swift in Sources */,
