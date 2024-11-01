@@ -16,6 +16,7 @@
 		FA0E3DB52CC943BB00C4981F /* LocalNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */; };
 		FA22177F2CCB924C004E5984 /* CoreDataRelationshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */; };
 		FA2217822CCC592B004E5984 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2217802CCC592B004E5984 /* CoreDataContainer.xcdatamodeld */; };
+		FA50B4A52CD58F5500ADED4D /* AlignmentGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B4A42CD58F5500ADED4D /* AlignmentGuideView.swift */; };
 		FA531E562CD0D60F00EB8284 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */; };
 		FA531E582CD0F11900EB8284 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E572CD0F11900EB8284 /* TimerView.swift */; };
 		FA531E5A2CD1308500EB8284 /* SubscriberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA531E592CD1308500EB8284 /* SubscriberView.swift */; };
@@ -61,6 +62,7 @@
 		FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationView.swift; sourceTree = "<group>"; };
 		FA22177E2CCB924C004E5984 /* CoreDataRelationshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationshipsView.swift; sourceTree = "<group>"; };
 		FA2217812CCC592B004E5984 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		FA50B4A42CD58F5500ADED4D /* AlignmentGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuideView.swift; sourceTree = "<group>"; };
 		FA531E552CD0D60F00EB8284 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
 		FA531E572CD0F11900EB8284 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FA531E592CD1308500EB8284 /* SubscriberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				FA6088712CCB04C900AF4A75 /* CoreDataView.swift */,
 				FA0265FB2CD2F3480035E52F /* CacheView.swift */,
 				FA531E592CD1308500EB8284 /* SubscriberView.swift */,
+				FA50B4A42CD58F5500ADED4D /* AlignmentGuideView.swift */,
 				FA7FCCF22CD241C400336195 /* FileManagerView.swift */,
 				FACBC0582CCFE9700082A407 /* DownloadWithEscapingView.swift */,
 				FA6088732CCB06DC00AF4A75 /* FruitsContainer.xcdatamodeld */,
@@ -332,6 +335,7 @@
 				FA2217822CCC592B004E5984 /* CoreDataContainer.xcdatamodeld in Sources */,
 				FA22177F2CCB924C004E5984 /* CoreDataRelationshipsView.swift in Sources */,
 				FA58FD9F2CC5B7AB00B867A5 /* swiftUIContinuedLearningApp.swift in Sources */,
+				FA50B4A52CD58F5500ADED4D /* AlignmentGuideView.swift in Sources */,
 				FAE400A82CC7BD67006BF37E /* MaskView.swift in Sources */,
 				FA80BAC92CC8625B005574FB /* SoundsView.swift in Sources */,
 				FA0265FC2CD2F3480035E52F /* CacheView.swift in Sources */,
