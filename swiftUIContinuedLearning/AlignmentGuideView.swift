@@ -5,6 +5,8 @@
 //  Created by MacBook on 01/11/2024.
 //
 
+//https://swiftui-lab.com/alignment-guides/
+
 import SwiftUI
 
 struct AlignmentGuideView: View {
