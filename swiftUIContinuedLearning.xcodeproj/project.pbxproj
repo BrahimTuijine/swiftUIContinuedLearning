@@ -42,6 +42,7 @@
 		FAA15AE12CC654F800C214AB /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE02CC654F800C214AB /* RotationGestureView.swift */; };
 		FAA15AE32CC65E8600C214AB /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE22CC65E8600C214AB /* DragGestureView.swift */; };
 		FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA15AE42CC6C36600C214AB /* DragGesture2.swift */; };
+		FAC335782CD7E649005203F1 /* ScrollViewPaginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC335772CD7E649005203F1 /* ScrollViewPaginView.swift */; };
 		FACBC04F2CCF0E5F0082A407 /* BackgroundThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */; };
 		FACBC0512CCF77FF0082A407 /* WeakSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */; };
 		FACBC0532CCF851B0082A407 /* TypealiasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC0522CCF851B0082A407 /* TypealiasView.swift */; };
@@ -90,6 +91,7 @@
 		FAA15AE02CC654F800C214AB /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE22CC65E8600C214AB /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		FAA15AE42CC6C36600C214AB /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
+		FAC335772CD7E649005203F1 /* ScrollViewPaginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewPaginView.swift; sourceTree = "<group>"; };
 		FACBC04E2CCF0E5F0082A407 /* BackgroundThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThreadView.swift; sourceTree = "<group>"; };
 		FACBC0502CCF77FF0082A407 /* WeakSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfView.swift; sourceTree = "<group>"; };
 		FACBC0522CCF851B0082A407 /* TypealiasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypealiasView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				FA80BAC82CC8625B005574FB /* SoundsView.swift */,
 				FA531E572CD0F11900EB8284 /* TimerView.swift */,
 				FAE400A32CC7A455006BF37E /* GeometryReaderView.swift */,
+				FAC335772CD7E649005203F1 /* ScrollViewPaginView.swift */,
 				FA0E3DB42CC943BB00C4981F /* LocalNotificationView.swift */,
 				FACBC0562CCF946B0082A407 /* CodableView.swift */,
 				FA50B4A62CD595C300ADED4D /* VisualEffectView.swift */,
@@ -315,6 +318,7 @@
 				FA50B4A72CD595C300ADED4D /* VisualEffectView.swift in Sources */,
 				FA963C672CD39BF900B157F7 /* ImageLoadingViewModel.swift in Sources */,
 				FACBC0552CCF88DA0082A407 /* EscapingView.swift in Sources */,
+				FAC335782CD7E649005203F1 /* ScrollViewPaginView.swift in Sources */,
 				FA0266092CD302BE0035E52F /* PhotoModelDataService.swift in Sources */,
 				FA0266052CD301020035E52F /* PhotoModel.swift in Sources */,
 				FAA15AE52CC6C36600C214AB /* DragGesture2.swift in Sources */,
